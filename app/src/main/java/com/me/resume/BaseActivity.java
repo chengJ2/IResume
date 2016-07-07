@@ -229,7 +229,7 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 	 * 
 	 * @Title:BaseActivity
 	 * @Description: 设置顶部标题 及 图标
-	 * @param id
+	 * @param visibility
 	 */
 	protected void setTopBarVisibility(int visibility) {
 		topLayout.setVisibility(visibility);
@@ -249,7 +249,7 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 	 * 
 	 * @Title:BaseActivity
 	 * @Description: 设置顶部标题 及 图标
-	 * @param id
+	 * @param str
 	 */
 	protected void setTopTitle(String str) {
 		toptext.setText(str);
@@ -269,7 +269,7 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 	 * 
 	 * @Title:BaseActivity
 	 * @Description: 设置顶部左边按钮图标
-	 * @param resId
+	 * @param bitmap
 	 */
 	protected void setLeftIcon(Bitmap bitmap) {
 		left_icon.setImageBitmap(bitmap);
@@ -362,7 +362,6 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 	 * 
 	 * @Title:BaseActivity
 	 * @Description: 设置右边按钮隐藏
-	 * @param resId
 	 */
 	protected void setNextBtnHide(){
 		nextButton.setVisibility(View.GONE);
@@ -427,7 +426,7 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 	 * 
 	 * @Title:BaseActivity
 	 * @Description: 设置界面消息
-	 * @param id
+	 * @param s
 	 */
 	protected void set2Msg(String s) {
 		msg.setText(s.toString().trim());
@@ -572,7 +571,8 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 
 	/**
 	 * 显示与隐藏密码框
-	 * @param pwdEditText
+	 * @param editText
+	 * @param imageView
 	 */
 	protected void showOrHidePwd(EditText editText,ImageView imageView){
 		showPwdType = !showPwdType;
@@ -633,7 +633,7 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 	
 	/**
 	 * 获取文本值
-	 * @param editText
+	 * @param textView
 	 * @return
 	 */
 	protected String getTextValue(TextView textView) {
@@ -708,8 +708,7 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 		}
 		return value;
 	}
-	
-	
+
 	/**
 	 * @Description: 面试分享心得
 	 */
@@ -949,7 +948,6 @@ public class BaseActivity extends SwipeBackActivity implements OnClickListener,T
 	
 	/**
 	 * 添加到我的收藏
-	 * @param holder
 	 * @param map
 	 * @param position
 	 */

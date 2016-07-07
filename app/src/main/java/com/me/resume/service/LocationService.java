@@ -1,6 +1,15 @@
 package com.me.resume.service;
 
 
+import android.content.Context;
+import android.widget.TextView;
+
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
+import com.me.resume.utils.RegexUtil;
+
 /**
  * 定位到当前位置
  * @author Administrator
@@ -8,12 +17,12 @@ package com.me.resume.service;
  */
 public class LocationService {
 
-	/*public LocationClient mLocationClient = null;
+	public LocationClient mLocationClient = null;
 	public MyLocationListenner myListener = new MyLocationListenner();
 	private String mData ;
 	private TextView textView;
 	
-	public LocationService(Context context,TextView textView) {
+	public LocationService(Context context, TextView textView) {
 		this.textView = textView;
 		mLocationClient = new LocationClient(context);
 		mLocationClient.registerLocationListener(myListener);
@@ -23,7 +32,7 @@ public class LocationService {
 	// 设置相关参数
 	private void setLocationOption() {
 		LocationClientOption option = new LocationClientOption();
-		option.setLocationMode(LocationMode.Hight_Accuracy); // 设置定位模式，高精度
+		option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy); // 设置定位模式，高精度
 		option.setOpenGps(true); // 打开gps
 		option.setAddrType("all");// 设置返回具体地址
 		option.setScanSpan(900); // 设置定位模式，小于1秒则一次定位;大于等于1秒则定时定位
@@ -35,9 +44,9 @@ public class LocationService {
 	}
 	
 
-	*//**
+	/**
 	 * 监听函数，又新位置的时候，格式化成字符串，输出到屏幕中
-	 *//*
+	 */
 	public class MyLocationListenner implements BDLocationListener {
 		@Override
 		public void onReceiveLocation(BDLocation location) {
@@ -58,10 +67,10 @@ public class LocationService {
 		}
 	}
 	
-	*//**
+	/**
 	 * 显示字符串
 	 * @param str
-	 *//*
+	 */
 	public void logMsg(String str) {
 		try {
 			mData = str;
@@ -71,5 +80,5 @@ public class LocationService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}*/
+	}
 }

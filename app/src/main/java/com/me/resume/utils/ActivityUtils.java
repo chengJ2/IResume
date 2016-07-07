@@ -105,10 +105,8 @@ public class ActivityUtils {
 	 *            当前activity
 	 * @param obj
 	 *            目标activity字符串
-	 * @param key 
-	 * 			  key
-	 * @param data
-	 *            value
+	 * @param name
+	 * @param bundle
 	 */
 	public static void startActivityPro(Activity src, String obj,String name,Bundle bundle) {
 		try {
@@ -159,8 +157,6 @@ public class ActivityUtils {
 	 *            目标activity字符串
 	 * @param finish
 	 *            是否关闭
-	 * @param bundle
-	 *            传递时附带的参数
 	 * @param requestCode
 	 *            如果值大于0，则会在退出调用界面后返回该值到调用该方法的界面中 If >= 0, this code will be
 	 *            returned in onActivityResult() when the activity exits.
@@ -185,10 +181,10 @@ public class ActivityUtils {
 	 *            当前activity
 	 * @param obj
 	 *            目标activity字符串
-	 * @param finish
-	 *            是否关闭
-	 * @param bundle
-	 *            传递时附带的参数
+	 * @param key
+	 *            key
+	 * @param data
+	 *            value
 	 * @param requestCode
 	 *            如果值大于0，则会在退出调用界面后返回该值到调用该方法的界面中 If >= 0, this code will be
 	 *            returned in onActivityResult() when the activity exits.

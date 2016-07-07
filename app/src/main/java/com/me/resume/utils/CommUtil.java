@@ -96,7 +96,8 @@ public class CommUtil {
 	/**
 	 * 将px转换为dip
 	 * 
-	 * @param dipValue
+	 * @param context
+	 * @param pxValue
 	 * @return
 	 */
 	public static int px2dip(Context context, float pxValue) {
@@ -107,8 +108,8 @@ public class CommUtil {
 	 /** 
      * 将px值转换为sp值，保证文字大小不变 
      *  
-     * @param pxValue 
-     * @param fontScale 
+     * @param context
+     * @param pxValue
      *            （DisplayMetrics类中属性scaledDensity） 
      * @return 
      */  

@@ -493,7 +493,6 @@ public class DialogUtils {
 	 * 
 	 * @param context
 	 * @param parent
-	 * @param resId
 	 * @param handler
 	 */
 	public static void showPhotoPathDialog(Activity context,View parent,Handler handler){
