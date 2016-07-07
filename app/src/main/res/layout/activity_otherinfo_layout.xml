@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.me.resume.views.CommScrollView
+         style="@style/comm_scrollview_style" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/grey_50"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:padding="5dip"
+                    android:text="@string/ot_languages"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_middle_text_size" />
+
+                <TextView
+                    android:id="@+id/ot_languages_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="@string/ot_edit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ot_languages_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="@string/ot_add"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout
+                style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ot_info_language" />
+
+                <TextView
+                    android:id="@+id/info_language"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ot_info_choose_language" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ot_info_literacyskills" />
+
+                <TextView
+                    android:id="@+id/info_literacyskills"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ot_info_choose_literacyskills" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ot_info_listeningspeaking" />
+
+                <TextView
+                    android:id="@+id/info_listeningspeaking"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ot_info_choose_listeningspeaking" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/grey_50"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:padding="5dip"
+                    android:text="@string/ot_certificate"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_middle_text_size" />
+
+                <TextView
+                    android:id="@+id/ot_certificate_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="@string/ot_edit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ot_certificate_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="@string/ot_add"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ot_info_certificate" />
+
+                <TextView
+                    android:id="@+id/info_certificate"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ot_info_input_certificate" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ot_info_getcertificatetime" />
+
+                <TextView
+                    android:id="@+id/info_certificatetime"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ot_info_choose_getcertificatetime" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/grey_50"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:padding="5dip"
+                    android:text="@string/ot_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_middle_text_size" />
+
+                <TextView
+                    android:id="@+id/ot_otherinfo_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="@string/ot_edit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/ot_otherinfo_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="@string/ot_add"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ot_info_title" />
+
+                <TextView
+                    android:id="@+id/info_title"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ot_info_choose_title" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item_mul" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ot_info_description" />
+
+                <EditText
+                    android:id="@+id/info_description"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ot_info_input_description"
+                    android:singleLine="false" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+        </LinearLayout>
+    </com.me.resume.views.CommScrollView>
+
+</RelativeLayout>

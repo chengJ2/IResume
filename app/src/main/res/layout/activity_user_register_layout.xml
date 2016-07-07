@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_bg_shape" >
+
+    <LinearLayout
+        android:id="@+id/useregisterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/regTxt_username"
+            style="@style/userinfo_item_style_white"
+            android:drawableLeft="@mipmap/icon_username"
+            android:hint="@string/register_input_hint" />
+
+        <View style="@style/line_padding10_white" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/regTxt_phone_email"
+                style="@style/userinfo_item_style_white"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_phone"
+                android:hint="@string/register_input2_hint" />
+
+            <ImageView
+                android:id="@+id/regswitch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_reg_switch" />
+        </LinearLayout>
+
+        <View style="@style/line_padding10_white" />
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/regTxt_password"
+            style="@style/userinfo_item_style_white"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_pwd"
+            android:hint="@string/login_input_pwd_hint"
+            android:inputType="textPassword" />
+        <ImageView
+                android:id="@+id/regpwdshow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_pwd_show" />
+        </LinearLayout>
+
+        <View style="@style/line_padding10_white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/protocollayout"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_below="@id/useregisterLayout"
+        android:layout_margin="@dimen/margin_20" >
+
+        <ImageView
+            android:id="@+id/proto_checkbox"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/checkbox_sel" />
+
+        <TextView
+            android:id="@+id/protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/proto_checkbox"
+            android:gravity="center"
+            android:text="@string/register_protocol"
+            android:textColor="@color/white"
+            android:textSize="@dimen/micro_text_size" />
+        </RelativeLayout>
+    
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/button_menu_white"
+        android:layout_below="@id/protocollayout"
+        android:text="@string/action_register" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:lineSpacingExtra="3dip"
+        android:text="@string/register_warn"
+        android:textColor="@color/register_warn"
+        android:textSize="@dimen/micro_text_size" />
+
+    <TextView
+        android:id="@+id/acclogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:gravity="center|left"
+        android:text="@string/account_go_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_middle_text_size" />
+
+</RelativeLayout>

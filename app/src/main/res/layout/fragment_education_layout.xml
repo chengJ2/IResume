@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.me.resume.views.CommScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ed_info_time" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/info_startworktime"
+                        style="@style/user_info_item_ed"
+                        android:layout_weight="3.5"
+                        android:hint="@string/we_info_choose_worktime2" />
+
+                    <TextView
+                        style="@style/user_info_item_ed"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:text="@string/tag_time_between" />
+
+                    <TextView
+                        android:id="@+id/info_endworktime"
+                        style="@style/user_info_item_ed"
+                        android:layout_marginLeft="0dip"
+                        android:layout_weight="3.5"
+                        android:hint="@string/we_info_choose_worktime2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ed_info_school" />
+
+                <EditText
+                    android:id="@+id/info_school"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ed_info_input_school" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ed_info_isexamination" />
+
+                <RadioGroup
+                    android:id="@+id/rg_examination"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_examination1"
+                        style="@style/user_info_item_radio"
+                        android:checked="true"
+                        android:text="@string/ed_info_isexamination_1" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_examination2"
+                        style="@style/user_info_item_radio"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/ed_info_isexamination_2" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout
+                style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ed_info_majorname" />
+
+                <TextView
+                    android:id="@+id/info_majorname"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ed_info_choose_majorname" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ed_info_degree" />
+
+                <TextView
+                    android:id="@+id/info_degree"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/ed_info_choose_degree" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+        </LinearLayout>
+    </com.me.resume.views.CommScrollView>
+
+</RelativeLayout>

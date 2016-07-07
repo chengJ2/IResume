@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginRight="15dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dip"
+        android:scaleType="centerInside"
+        android:src="@mipmap/user_defaulta_avatar_bg" />
+    
+    <ImageView
+        android:id="@+id/share_usernameavator"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:padding="2dip"
+        android:layout_marginRight="15dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dip"
+        android:scaleType="centerInside"
+        android:src="@mipmap/user_default_avatar" />
+    
+     <ImageView
+         android:id="@+id/user_online"
+        android:layout_width="8dip"
+        android:layout_height="8dip"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_online"
+        android:layout_marginTop="45dip"
+        android:layout_marginLeft="30dip"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/share_usernameavator"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip" >
+
+            <TextView
+                android:id="@+id/share_username"
+                style="@style/user_center_text"
+                android:layout_alignParentLeft="true"
+                android:maxWidth="200dip"
+                android:text="张三疯"
+                android:textColor="#303F9F"
+                android:textSize="@dimen/small_middle_text_size" />
+
+            <ImageView
+                android:id="@+id/share_collection"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_collection"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/info2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_20">
+
+            <TextView
+                android:id="@+id/share_jobtitle"
+                style="@style/user_center_text"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:maxWidth="200dip"
+                android:text="Android开发工程师"
+                android:textColor="@color/grey_10"
+                android:textSize="@dimen/microd_text_size"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/share_workyear"
+                style="@style/user_center_text"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@id/share_jobtitle"
+                android:maxWidth="200dip"
+                android:text="2年工作经验"
+                android:textColor="@color/grey_10"
+                android:textSize="@dimen/microd_text_size"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/share_content"
+            style="@style/user_center_text"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/margin_10"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lineSpacingExtra="3dip"
+            android:maxHeight="120dip"
+            android:maxLines="3"
+            android:paddingRight="8dip"
+            android:singleLine="false"
+            android:text="测试测试测试测试测试测试测试测试测试测试测试测试"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_20" >
+
+            <TextView
+                android:id="@+id/share_city"
+                style="@style/user_center_text"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|bottom"
+                android:text="武汉市"
+                android:textColor="@color/grey_10"
+                android:textSize="@dimen/microd_text_size" />
+
+            <TextView
+                android:id="@+id/share_datime"
+                style="@style/user_center_text"
+                android:layout_alignParentRight="true"
+                android:gravity="left|bottom"
+                android:text="2016.5.10"
+                android:textColor="@color/grey_10"
+                android:textSize="@dimen/microd_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

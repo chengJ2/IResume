@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.me.resume.views.CommScrollView
+        style="@style/comm_scrollview_style" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:gravity="center|left"
+                android:padding="5dip"
+                android:text="@string/ev_info_default_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item_mul" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ev_info_self_evaluation" />
+
+                <EditText
+                    android:id="@+id/info_self_evaluation"
+                    style="@style/user_info_item_ed"
+                    android:singleLine="false"
+                    android:hint="@string/ev_info_input_self_evaluation" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item_mul" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ev_info_career_goal" />
+
+                <EditText
+                    android:id="@+id/info_career_goal"
+                    style="@style/user_info_item_ed"
+                    android:singleLine="false"
+                    android:hint="@string/ev_info_input_career_goal" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            
+             <View style="@style/line_padding10" />
+
+            
+              <LinearLayout
+                android:id="@+id/llout03"
+                style="@style/noraml_item_mul" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/ev_info_character" />
+
+                <TextView
+                    android:id="@+id/info_character"
+                    style="@style/user_info_item_ed"
+                    android:singleLine="false"
+                    android:maxLines="5"
+                    android:ellipsize="end"
+                    android:hint="@string/ev_info_choose_character" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+            
+              <View style="@style/line_padding10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:padding="@dimen/margin_8"
+                android:text="@string/ev_info_default_3"
+                android:textColor="@color/red"
+                android:textSize="@dimen/micro_text_size" />
+            
+        </LinearLayout>
+    </com.me.resume.views.CommScrollView>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+   <ListView
+        android:id="@+id/collectionListView"
+        style="@style/comm_listview_style"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nodata"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        style="@style/comm_nodata_style" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/address_item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+    	<TextView
+            android:id="@+id/search_cancle"
+            style="@style/search_item_right_text"
+            android:text="@string/search_cancle"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+    
+        <EditText
+            android:id="@+id/index_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/search_cancle"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/search_bg_corner"
+            android:descendantFocusability="blocksDescendants"
+            android:drawableLeft="@mipmap/search_icon"
+            android:focusable="true"
+            android:imeOptions="actionSearch"
+            android:inputType="none"
+            android:paddingBottom="4dip"
+            android:paddingLeft="3dp"
+            android:paddingRight="4dip"
+            android:paddingTop="4dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            android:hint="@string/hint_address_text" 
+            android:textColorHint="@color/grey_10"/>
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="75dip"
+            android:background="@mipmap/clear"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>

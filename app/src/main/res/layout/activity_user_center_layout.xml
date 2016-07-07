@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/person_bg"
+    android:id="@+id/userc_layout" >
+
+    <com.me.resume.views.CommScrollView
+        style="@style/comm_scrollview_style"
+        android:layout_marginBottom="0dip"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/center_topbar"
+                layout="@layout/top_back_layout" />
+
+            <RelativeLayout
+                android:id="@+id/rlout01"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_10"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dip"
+                    android:background="@drawable/user_center_corner_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llout02"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dip"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/center_username"
+                            style="@style/user_center_text"
+                            android:maxWidth="80dip"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/center_workyear"
+                            style="@style/user_center_text"
+                            android:text="|-" />
+
+                        <TextView
+                            android:id="@+id/center_city"
+                            style="@style/user_center_text"
+                            android:text="|-" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llout03"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/resume_complete"
+                            style="@style/user_center_small_text"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="--" />
+
+                        <TextView
+                            android:id="@+id/resume_updatime"
+                            style="@style/user_center_small_text"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="--" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/user_default_avatar_bg" />
+
+                <ImageView
+                    android:id="@+id/user_info_avatar"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_centerHorizontal="true"
+                    android:padding="2dip"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/user_default_avatar" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/user_center_corner_bg"
+                android:orientation="horizontal"
+                android:padding="3dip" >
+
+                <TextView
+                    android:id="@+id/mycollection"
+                    style="@style/user_center_content_func"
+                    android:drawableTop="@mipmap/icon_collection_middle"
+                    android:text="@string/personal_c_item1" />
+
+                <View
+                    style="@style/line2"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center" />
+
+                <!-- <RelativeLayout
+                    android:id="@+id/viewcalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/icon_calendar"
+                        android:text="@string/personal_c_item2"
+                        style="@style/user_center_content_func"/>
+
+                    <TextView
+                        android:id="@+id/day"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:gravity="center"
+                        android:text="31"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/main_time_text"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/line2"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center" /> -->
+
+                <TextView
+                    android:id="@+id/review_resume"
+                    style="@style/user_center_content_func"
+                    android:drawableTop="@mipmap/icon_review_small"
+                    android:text="@string/personal_c_item31" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@drawable/user_center_corner_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/info_layout0"
+                    style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_center_item_left"
+                        android:text="@string/resume_evaluation" />
+
+                    <TextView
+                        android:id="@+id/info_item0"
+                        style="@style/user_center_item_right"
+                        android:text="-" />
+                </LinearLayout>
+                <View style="@style/line_padding10" />
+                <LinearLayout
+                    android:id="@+id/info_layout1"
+                    style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_center_item_left"
+                        android:text="@string/resume_jobintension" />
+
+                    <TextView
+                        android:id="@+id/info_item1"
+                        style="@style/user_center_item_right"
+                        android:text="-" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+
+                <LinearLayout
+                    android:id="@+id/info_layout2"
+                    style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_center_item_left"
+                        android:text="@string/resume_education" />
+
+                    <TextView
+                        android:id="@+id/info_item2"
+                        style="@style/user_center_item_right"
+                        android:text="-" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+
+                <LinearLayout
+                    android:id="@+id/info_layout3"
+                    style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_center_item_left"
+                        android:text="@string/resume_workexperience2" />
+
+                    <TextView
+                        android:id="@+id/info_item3"
+                        style="@style/user_center_item_right"
+                        android:text="-" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+
+                <LinearLayout
+                    android:id="@+id/info_layout4"
+                    style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_center_item_left"
+                        android:text="@string/resume_project_experience" />
+
+                    <TextView
+                        android:id="@+id/info_item4"
+                        style="@style/user_center_item_right"
+                        android:text="-" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.me.resume.views.CommScrollView>
+
+</RelativeLayout>

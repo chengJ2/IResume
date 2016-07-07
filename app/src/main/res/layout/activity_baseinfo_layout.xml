@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true" >
+
+    <com.me.resume.views.CommScrollView 
+        style="@style/comm_scrollview_style" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/baseinfo_item_text"
+                android:layout_width="match_parent"
+                android:text="@string/baseinfo_bt_item" />
+
+            <LinearLayout
+                android:id="@+id/llout01"
+                style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/info_name_key" />
+
+                <EditText
+                    android:id="@+id/info_realname"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/info_name_hint" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/info_sex" />
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="6"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioman"
+                        style="@style/user_info_item_radio"
+                        android:checked="true"
+                        android:text="@string/info_sex_1" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radiowoman"
+                        style="@style/user_info_item_radio"
+                        android:layout_marginLeft="20dip"
+                        android:text="@string/info_sex_2" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/info_brithday" />
+
+                <TextView
+                    android:id="@+id/info_brithday"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/info_choose" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/info_workyear" />
+
+                <TextView
+                    android:id="@+id/info_workyear"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/info_choose" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/info_contack" />
+
+                <EditText
+                    android:id="@+id/info_phone"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/info_input_contack"
+                    android:inputType="phone" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/info_city" />
+
+                <TextView
+                    android:id="@+id/info_city"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/info_choose" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View style="@style/line_padding10" />
+
+            <LinearLayout style="@style/noraml_item" >
+
+                <TextView
+                    style="@style/user_info_item_tv"
+                    android:text="@string/info_email" />
+
+                <EditText
+                    android:id="@+id/info_email"
+                    style="@style/user_info_item_ed"
+                    android:hint="@string/info_input_email" />
+
+                <ImageView
+                    style="@style/user_info_item_iv"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/uselesstitleLayoyut"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_item_height"
+                android:background="@color/grey_30" >
+
+                <TextView
+                    style="@style/home_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/baseinfo_xt_item" />
+
+                <ImageView
+                    android:id="@+id/arrow_updown"
+                    android:layout_width="60dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_arrow_down" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/uselessLayoyut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_info_item_tv"
+                        android:text="@string/info_hometown" />
+
+                    <TextView
+                        android:id="@+id/info_hometown"
+                        style="@style/user_info_item_ed"
+                        android:hint="@string/info_input_hometown" />
+
+                    <ImageView
+                        style="@style/user_info_item_iv"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+
+                <LinearLayout style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_info_item_tv"
+                        android:text="@string/info_maritalstatus" />
+
+                    <TextView
+                        android:id="@+id/info_maritalstatus"
+                        style="@style/user_info_item_ed"
+                        android:hint="@string/info_choose" />
+
+                    <ImageView
+                        style="@style/user_info_item_iv"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+
+                <LinearLayout style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_info_item_tv"
+                        android:text="@string/info_nationality" />
+
+                    <EditText
+                        android:id="@+id/info_nationality"
+                        style="@style/user_info_item_ed"
+                        android:hint="@string/info_input_nationality" />
+
+                    <ImageView
+                        style="@style/user_info_item_iv"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+
+                <LinearLayout style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_info_item_tv"
+                        android:text="@string/info_license" />
+
+                    <EditText
+                        android:id="@+id/info_license"
+                        style="@style/user_info_item_ed"
+                        android:hint="@string/info_input_license" />
+
+                    <ImageView
+                        style="@style/user_info_item_iv"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+
+                <LinearLayout style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_info_item_tv"
+                        android:text="@string/info_workingabroad" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_workingabroad"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="6"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radio_yes"
+                            style="@style/user_info_item_radio"
+                            android:checked="true"
+                            android:text="@string/info_workingabroad_1" />
+
+                        <RadioButton
+                            android:id="@+id/radio_no"
+                            style="@style/user_info_item_radio"
+                            android:layout_marginLeft="20dip"
+                            android:text="@string/info_workingabroad_2" />
+                    </RadioGroup>
+
+                    <ImageView
+                        style="@style/user_info_item_iv"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+
+                <LinearLayout style="@style/noraml_item" >
+
+                    <TextView
+                        style="@style/user_info_item_tv"
+                        android:text="@string/info_politicalstatus" />
+
+                    <TextView
+                        android:id="@+id/info_politicalstatus"
+                        style="@style/user_info_item_ed"
+                        android:hint="@string/info_choose" />
+
+                    <ImageView
+                        style="@style/user_info_item_iv"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View style="@style/line_padding10" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.me.resume.views.CommScrollView>
+
+</RelativeLayout>

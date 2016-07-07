@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/pwdTxt_phone_email"
+            style="@style/userinfo_item_style_white"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_phone"
+            android:hint="@string/login_input1_hint" />
+
+        <ImageView
+            android:id="@+id/regswitch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_reg_switch" />
+    </LinearLayout>
+
+    <View style="@style/line_padding10_white" />
+
+    <LinearLayout
+        android:id="@+id/userpwdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/new_Txt_password"
+                style="@style/userinfo_item_style_white"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_pwd"
+                android:hint="@string/login_input_old_pwd_hint"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/regpwdshow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_pwd_show" />
+        </LinearLayout>
+
+        <View style="@style/line_padding10_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/new_Txt2_password"
+                style="@style/userinfo_item_style_white"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_pwd"
+                android:hint="@string/login_input_snew_pwd_hint"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/regpwd2show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_pwd_show" />
+        </LinearLayout>
+
+        <View style="@style/line_padding10_white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_check"
+        style="@style/button_menu_white"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_weight="0"
+        android:text="@string/show_button_sure"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_newPwd"
+        style="@style/button_menu_white"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_weight="0"
+        android:text="@string/show_button_getpwd"
+        android:visibility="gone" />
+
+</LinearLayout>

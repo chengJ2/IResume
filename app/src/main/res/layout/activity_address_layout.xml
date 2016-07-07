@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+   <include layout="@layout/comm_search_layout"/>
+
+    <com.me.resume.views.CommScrollView
+        style="@style/comm_scrollview_style"
+        android:layout_marginBottom="0dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10">
+
+            <LinearLayout
+                android:id="@+id/addrtopLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/address_item_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/address_item_left_text"
+                        android:text="@string/location"/>
+
+                    <Button
+                        android:id="@+id/review_btn"
+                        android:layout_width="70dip"
+                        android:layout_height="32dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/button_bg_corner"
+                        android:gravity="center"
+                        android:text="@string/default_city"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_middle_text_size"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/address_item_text"
+                    android:text="@string/hot_city"
+                    android:textColor="@color/red"/>
+
+                <GridView
+                    android:id="@+id/hotaddress_gridview"
+                    style="@style/home_content_grilview"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_height="140dip"
+                    android:background="#00000000"
+                    android:numColumns="4" >
+                </GridView>
+
+                <TextView
+                    style="@style/address_item_text"
+                    android:text="@string/all_city" />
+            </LinearLayout>
+			
+              <com.me.resume.views.CustomListView
+                    android:id="@+id/alladdrListview"
+                    android:layout_marginTop="0dip"
+                    style="@style/comm_listview_style"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/msgText"
+                    style="@style/comm_nodata_style"
+                    android:layout_marginTop="50dip"
+                    android:visibility="gone" />
+        </LinearLayout>
+    </com.me.resume.views.CommScrollView>
+
+</LinearLayout>

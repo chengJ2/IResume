@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/index7layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title_layout" />
+
+    <com.me.resume.views.CommScrollView 
+        style="@style/main_scrollview_style" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:background="@mipmap/main_indexg_icon" />
+
+            <LinearLayout
+                android:id="@+id/index7_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="5dip"
+                    android:layout_height="18dip"
+                    android:layout_gravity="top|left"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="@dimen/margin_8"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_height="18dip"
+                        style="@style/main_common_text"
+                        android:text="@string/ot_languages" />
+
+                    <com.me.resume.views.CustomListView
+                        android:id="@+id/listview1"
+                        style="@style/main_listview_style"
+                        android:layout_marginTop="@dimen/margin_8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/index7_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <View
+                    android:layout_width="5dip"
+                    android:layout_height="18dip"
+                    android:layout_gravity="top|left"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="@dimen/margin_8"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_height="18dip"
+                        style="@style/main_common_text"
+                        android:text="@string/ot_get_certificate"/>
+
+                    <com.me.resume.views.CustomListView
+                        android:id="@+id/listview2"
+                        style="@style/main_listview_style"
+                        android:layout_marginTop="@dimen/margin_8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/index7_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <com.me.resume.views.CustomListView
+                    android:id="@+id/listview3"
+                    style="@style/main_listview_style"
+                    android:layout_marginTop="@dimen/margin_8" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.me.resume.views.CommScrollView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_green" >
+
+    <TextView
+        android:id="@+id/item1"
+        style="@style/index_top_text"
+        android:text="@string/resume_message" />
+    
+	<TextView
+        android:id="@+id/item2"
+        android:layout_below="@id/item1"
+        style="@style/main_common_text"
+        android:layout_marginTop="@dimen/margin_20"
+        android:padding="@dimen/margin_8"
+        android:lineSpacingExtra="3dip"
+        android:textSize="@dimen/small_middle_text_size"
+        android:text="@string/resume_mywords" />
+    
+    <ImageView 
+        android:id="@+id/gohome"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:src="@drawable/icon_gohome"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+    
+    <TextView
+        android:gravity="center"
+        style="@style/main_common_text"
+        android:textSize="@dimen/blarge_text_size"
+        android:text="谢谢"
+        android:layout_marginBottom="20dip"
+        android:layout_above="@id/gohome" />
+</RelativeLayout>

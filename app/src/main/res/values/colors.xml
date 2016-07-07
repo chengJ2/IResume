@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="top_bar">#6699FF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#00CC00</color>
+    <color name="red">#CC0000</color>
+    <color name="red_50">#50CC0000</color>
+    
+     <color name="grey">#BEBEBE</color>
+     <color name="grey_80">#80BEBEBE</color>
+     <color name="grey_70">#70808080</color>
+     <color name="grey_50">#50BEBEBE</color>
+     <color name="grey_30">#30BEBEBE</color>
+     <color name="grey_10">#454545</color>
+     
+     <color name="orange_10">#FFAA00</color>
+     <color name="orange_50">#FFFADD</color>
+     
+    <color name="register_warn">#CAFF70</color>
+     
+    <color name="line">#DFDFDF</color>
+    <!-- 个人基本信息 -->
+    <color name="user_edit_text">#787777</color>
+    <color name="user_info_edit_hint">#CCCCCC</color>
+    <!-- 个人基本信息 -->
+    
+    <color name="color_green">#6699FF</color>
+    
+    <!-- topic text color -->
+    <color name="t_primary">#212121</color>
+    <color name="t_secondary">#727272</color>
+    <color name="t_divider">#B6B6B6</color>
+    
+    <!-- review bgcolor -->
+    <color name="color_1">#FF69B4</color>
+    <color name="color_2">#9F79EE</color>
+    <color name="color_3">#8470FF</color>
+    <color name="color_4">#FFA500</color>
+    <color name="color_5">#FF7F50</color>
+    <color name="color_6">#5CACEE</color>
+    <color name="color_7">#EE7AE9</color>
+    <color name="color_8">#32CD32</color>
+    <color name="color_9">#B23AEE</color>
+    <color name="color_10">#6699FF</color>
+    
+    <!-- character bgcolor -->
+    <color name="color_c1">#FF69B4</color>
+    <color name="color_c2">#9F79EE</color>
+    <color name="color_c3">#8470FF</color>
+    <color name="color_c4">#FFA500</color>
+</resources>

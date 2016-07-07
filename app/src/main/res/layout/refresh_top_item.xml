@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/orange_50" >
+
+    <TextView
+        android:id="@+id/refresh_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/microd_text_size"
+        android:textColor="@color/grey_10"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_refresh_height"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateBehavior="repeat"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/refresh_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:gravity="center_vertical"
+            android:text="@string/refresh_down_text"
+            android:textColor="@color/grey_10"
+            android:textSize="@dimen/micro_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

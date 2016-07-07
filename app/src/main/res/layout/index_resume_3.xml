@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:orientation="vertical" 
+    android:id="@+id/index3layout">
+
+   <include layout="@layout/top_title_layout"
+       android:visibility="invisible"/>
+
+    <com.me.resume.views.CommScrollView
+        style="@style/main_scrollview_style">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+            
+		    <ImageView
+		        android:layout_width="match_parent"
+		        android:layout_height="150dip"
+		        android:src="@mipmap/main_indexc_icon" />
+            
+            <LinearLayout
+                android:id="@+id/llout01"
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical"
+            	android:layout_margin="@dimen/margin_10" >
+                
+                <TextView
+                    android:id="@+id/self_evaluation"
+            		style="@style/main_common_text"
+            		android:textSize="@dimen/small_middle_text_size"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:lineSpacingExtra="3dip"
+                    android:text="" />
+                
+                <com.me.resume.views.TagFlowLayout 
+                    android:id="@+id/flowlayout"
+                    android:layout_width="match_parent"
+            		android:layout_height="300dip"
+            		android:layout_gravity="center"
+            		android:layout_marginTop="50dip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.me.resume.views.CommScrollView>
+
+</LinearLayout>

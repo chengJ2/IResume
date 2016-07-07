@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_50"
+    android:fitsSystemWindows="true" 
+    android:orientation="vertical">
+    
+    <GridView
+          android:id="@+id/covermoregridview"
+          style="@style/home_content_grilview"
+          android:layout_margin="0dip"
+          android:padding="@dimen/margin_10"
+          android:visibility="visible"/>
+    
+     <TextView
+          android:id="@+id/msgText"
+          android:layout_centerInParent="true"
+          style="@style/comm_nodata_style" />
+</RelativeLayout>

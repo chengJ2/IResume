@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true" >
+
+    <com.me.resume.views.RefreshableView
+        android:id="@+id/refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.me.resume.views.CommScrollView
+            android:id="@+id/commscrollview"
+            style="@style/comm_scrollview_style" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    style="@style/home_item">
+
+                    <View
+                        android:id="@+id/view1"
+                        style="@style/home_item_icon"
+                        android:background="@mipmap/cover" />
+
+                    <TextView
+                        style="@style/home_item_text"
+                        android:layout_toRightOf="@id/view1"
+                        android:text="@string/item_text6" />
+
+                    <ImageView
+                        android:id="@+id/covermore"
+                        style="@style/home_item_more" />
+                </RelativeLayout>
+
+                <GridView
+                    android:id="@+id/covergridview"
+                    android:layout_height="@dimen/home_cover_item_height"
+                    style="@style/home_content_grilview" />
+
+                <RelativeLayout
+                    style="@style/home_item" >
+
+                    <View
+                        android:id="@+id/view2"
+                        style="@style/home_item_icon"
+                        android:background="@mipmap/link" />
+
+                    <TextView
+                        style="@style/home_item_text"
+                        android:layout_toRightOf="@id/view2"
+                        android:text="@string/item_text3" />
+
+                    <ImageView
+                        android:id="@+id/linkmore"
+                        style="@style/home_item_more"/>
+                </RelativeLayout>
+
+                <GridView
+                    android:id="@+id/linkgridview"
+                    style="@style/home_content_grilview"
+                    android:layout_height="90dip"/>
+
+                <RelativeLayout
+                    style="@style/home_item" >
+
+                    <View
+                        android:id="@+id/view3"
+                       style="@style/home_item_icon"
+                        android:background="@mipmap/review" />
+
+                    <TextView
+                        style="@style/home_item_text"
+                        android:layout_toRightOf="@id/view3"
+                        android:text="@string/item_text4" />
+
+                    <ImageView
+                        android:id="@+id/sharemore"
+                        style="@style/home_item_more"
+                        android:src="@mipmap/more" />
+                </RelativeLayout>
+
+                <com.me.resume.views.CustomListView
+                    android:id="@+id/reviewshareListView"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    style="@style/comm_listview_style" />
+
+                <TextView
+                    android:id="@+id/msgText"
+                    style="@style/comm_nodata_style"
+                    android:layout_marginTop="40dip"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.me.resume.views.CommScrollView>
+    </com.me.resume.views.RefreshableView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_bottombar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/make_btn"
+            style="@style/button_menu"
+            android:text="@string/edit_resume" />
+
+        <Button
+            android:id="@+id/review_btn"
+            style="@style/button_menu"
+            android:text="@string/review_resume"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

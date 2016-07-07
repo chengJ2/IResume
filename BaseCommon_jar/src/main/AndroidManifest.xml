@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="resume.me.com.base">
+
+    <application>
+
+    </application>
+
+</manifest>
