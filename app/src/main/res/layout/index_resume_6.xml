@@ -14,25 +14,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/margin_10" >
+            android:orientation="vertical">
 
              <ImageView
-		        android:layout_width="match_parent"
-		        android:layout_height="180dip"
-		        android:src="@mipmap/main_indexf_icon" />
+		        style="@style/main_icon_style"
+		        android:src="@mipmap/main_index_icon6" />
             
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/margin_10">
+                android:layout_margin="@dimen/margin_10">
 
                 <View
-                    android:layout_width="5dip"
-                    android:layout_height="18dip"
-                    android:layout_gravity="top|left"
-                    android:background="@color/white" />
+                    style="@style/main_index_view" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -58,14 +53,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="@dimen/margin_10"
+                android:layout_margin="@dimen/margin_10"
                 android:visibility="gone" >
 
                   <View
-                    android:layout_width="5dip"
-                    android:layout_height="18dip"
-                    android:layout_gravity="top|left"
-                    android:background="@color/white" />
+                      style="@style/main_index_view" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

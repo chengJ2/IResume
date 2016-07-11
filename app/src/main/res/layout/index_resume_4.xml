@@ -9,9 +9,8 @@
     <include layout="@layout/top_title_layout" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dip"
-        android:src="@mipmap/main_indexd_icon" />
+        style="@style/main_icon_style"
+        android:src="@mipmap/main_index_icon4" />
 
     <TextView
         android:id="@+id/index_4_info1"
@@ -41,7 +40,8 @@
         <TextView
             style="@style/main_common_padding_text"
             android:layout_width="wrap_content"
-            android:text="目前工作状况：" />
+            android:text="@string/ji_info_curworkingstate"
+            android:textColor="#90FFFFFF"/>
 
         <TextView
             android:id="@+id/index_4_info6"

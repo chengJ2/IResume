@@ -9,8 +9,8 @@
     <string name="app_download">正在下载 有云简历 \u2026</string>
     <string name="app_declare1">特别声明</string>
     <string name="app_declare2">联系我们</string>
-    <string name="app_declare3">本App上的大部分内容来源网络,包括文字,图片等,提供的内容将服务使用者用于个人学习、研究或欣赏,以及其他非商业性或非盈利性用途.</string>
-    <string name="app_declare4">若内容侵犯了原作者的权利或原作者不愿意在本App展示内容,请及时通知并联系我们,予以删除。</string>
+    <string name="app_declare3">本软件平台上的大部分内容来源于网络,包括文字,图片等,我们提供的内容将服务使用者用于个人学习、参考或欣赏,以及其他非商业性或非盈利性用途.</string>
+    <string name="app_declare4">若有内容侵犯了原作者的权利或原作者不愿意在本软件平台上展示内容,请及时通知并联系我们,将予以删除。</string>
     <string name="app_declare5">我们郑重承诺:严格保密用户同步的数据,保证用户数据隐私安全。</string>
     
     <!-- 网络相关 -->
@@ -37,6 +37,7 @@
     <string name="resume_message">留言板</string>
     <string name="resume_makemywords">自定义留言信息</string>
     <string name="resume_mywords">&#160;&#160;&#160;&#160;我坚信在贵公司,我将学到更多知识,发挥出个人的最大效益.</string>
+    <string name="resume_thinks">谢谢</string>
     
      <!-- Home -->
     <string name="resume_center">简历中心</string>
@@ -65,6 +66,7 @@
     <string name="item_text9">收藏成功</string>
     <string name="item_text91">取消收藏</string>
     <string name="item_text100">正在下载,请稍后\u2026</string>
+    <string name="item_text101">简历预览封面说明</string>
     
     <!-- 设置界面 -->
     <string name="action_settings">设置</string>
@@ -73,12 +75,12 @@
     <string name="settings_item11">简历预览切换效果</string>
     <string name="settings_item2">自动切换简历预览</string>
     <string name="settings_item20">自动切换预览间隔</string>
-    <string name="settings_item201">5秒</string>
-    <string name="settings_item202">10秒</string>
-    <string name="settings_item203">15秒</string>
-    <string name="settings_item204">30秒</string>
-    <string name="settings_item205">45秒</string>
-    <string name="settings_item206">60秒</string>
+    <string name="settings_item201">3秒</string>
+    <string name="settings_item202">5秒</string>
+    <string name="settings_item203">7秒</string>
+    <string name="settings_item204">9秒</string>
+    <string name="settings_item205">11秒</string>
+    <string name="settings_item206">15秒</string>
     <string name="settings_item22">简历预览切换动画</string>
     <string name="settings_item21">预览界面编辑模式</string>
     <string name="settings_item3">检测新版本</string>
@@ -194,6 +196,7 @@
     <string name="personal_c_item16">上次更新:%s</string>
     <string name="personal_c_item17">应届生</string>
     <string name="personal_c_item18">%d年工作经验</string>
+    <string name="personal_c_item19">已有%d项经历</string>
     
     <!-- UI button click msg -->
     <string name="action_notice">提&#160;&#160;示</string>
@@ -372,6 +375,7 @@
     <!-- 教育培训经历 -->
 
     <!-- 求职意向 -->
+    <string name="ji_info_default_1">建议简明扼要，另外，不要将几个不相关的职位堆砌在一起，否则，这样会让HR认为您的职业方向不清晰。</string>
     <string name="ji_info_expectedworkingproperty">期望工作性质</string>
     <string name="ji_info_choose_expectedworkingproperty">请选择期望工作性质</string>
     <string name="ji_info_expectedworkingproperty_1">全职</string>
@@ -384,9 +388,12 @@
     <string name="ji_info_expectedworkcareer">期望从事职业</string>
     <string name="ji_info_choose_expectedworkcareer">请选择期望从事职业</string>
     <string name="ji_info_expectedmonthlysalary">期望月薪（税前）</string>
+    <string name="ji_info_expectedmonthlysalary2">期望月薪</string>
     <string name="ji_info_choose_expectedmonthlysalary">请选择期望月薪（税前）</string>
     <string name="ji_info_workingstate">工作状态</string>
     <string name="ji_info_choose_workingstate">请选择工作状态</string>
+    <string name="ji_info_curworkingstate">目前工作状况:&#160;</string>
+    
     <!-- 求职意向 -->
 
     <!-- 其他信息 -->

@@ -5,10 +5,7 @@
     android:orientation="horizontal" >
 
     <View
-        android:layout_width="5dip"
-        android:layout_height="18dip"
-        android:layout_gravity="top|left"
-        android:background="@color/white" />
+        style="@style/main_index_view" />
 
     <LinearLayout
         android:layout_width="match_parent"

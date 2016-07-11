@@ -12,7 +12,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginTop="10dip"
         android:scaleType="centerInside"
-        android:src="@mipmap/user_defaulta_avatar_bg" />
+        android:src="@mipmap/user_default2_avatar_bg" />
     
     <ImageView
         android:id="@+id/share_usernameavator"

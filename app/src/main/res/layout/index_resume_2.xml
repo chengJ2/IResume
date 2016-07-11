@@ -9,9 +9,8 @@
    <include layout="@layout/top_title_layout"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dip"
-        android:background="@mipmap/main_indexb_icon" />
+        style="@style/main_icon_style"
+        android:background="@mipmap/main_index_icon2" />
 
     <ListView
         android:id="@+id/weListview"

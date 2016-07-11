@@ -44,7 +44,6 @@ import com.me.resume.views.RefreshableView.RefreshListener;
 
 import resume.me.com.base.text.CommonText;
 
-
 /**
  * 
  * @Description: 首页
@@ -138,16 +137,16 @@ public class HomeActivity extends BaseActivity implements OnClickListener {
 		if (preferenceUtil.getPreferenceFData(Constants.FIRSTINSTALL)) {
 			startChildActivity(Constants.GUIDE, true);
 			return;
-		}else{
-			CommUtil.getDisplay(self);
-			boayLayout.removeAllViews();
-			View v = View.inflate(self,R.layout.activity_home, null);
-			boayLayout.addView(v);
-			if (preferenceUtil.getPreferenceData(Constants.SET_STARTVERYTIME)) {
-				startActivity(Constants.MAINACTIVITY, true);
-				return;
-			}
 		}
+		if (preferenceUtil.getPreferenceData(Constants.SET_STARTVERYTIME)) {
+			startActivity(Constants.MAINACTIVITY, true);
+			return;
+		}
+		CommUtil.getDisplay(self);
+		boayLayout.removeAllViews();
+		View v = View.inflate(self,R.layout.activity_home, null);
+		boayLayout.addView(v);
+			
 		findViews();
 		setCoverView(true);
 		setTopicData();
@@ -327,6 +326,7 @@ public class HomeActivity extends BaseActivity implements OnClickListener {
 			@Override
 			public void error() {
 				set2Msg(getStrValue(R.string.app_server_error));
+				mHandler.sendEmptyMessageDelayed(101, 100);
 			}
 			
 			public void success(Map<String, List<String>> map) {

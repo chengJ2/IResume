@@ -36,7 +36,7 @@
 	    android:layout_height="wrap_content"
 	    android:textColor="#626262"
 	    android:padding="10dip"
-	    android:text="尊敬的用户您好！近期由于数据中心服务器故障，导致数据更新滞后，给您带来的不便，还望理解！"
+	    android:text="尊敬的用户您好！近期由于国家环保部数据中心服务器故障，导致数据更新滞后，给您带来的不便，还望理解！" 
 	    android:textSize="15sp"
 	    android:lineSpacingExtra="3dip"
 	    android:paddingBottom="5dip"/>
